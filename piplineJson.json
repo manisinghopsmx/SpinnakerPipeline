@@ -1,0 +1,30 @@
+{
+  "keepWaitingPipelines": false,
+  "limitConcurrent": true,
+  "application": "maniapp",
+  "spelEvaluator": "v4",
+  "name": "140sec-maniapp",
+  "stages": [
+    {
+      "application": "maniapp",
+      "failPipeline": true,
+      "name": "Pipeline",
+      "pipeline": "728e434e-063b-4af5-86dd-3b915ccd36ae",
+      "refId": "2",
+      "requisiteStageRefIds": [
+        "1"
+      ],
+      "type": "pipeline",
+      "waitForCompletion": true
+    },
+    {
+      "name": "Wait",
+      "refId": "1",
+      "requisiteStageRefIds": [],
+      "type": "wait",
+      "waitTime": 5
+    },
+  ],
+  "index": 2,
+  "triggers": []
+}
